@@ -23,7 +23,7 @@ public class CreateFileMain {
 		
 		Map<String,String> config = new HashMap<String,String>();
 		config.put("output", CreateFileMain.class.getResource("/").toString());
-		config.put("input",new File(Test.class.getResource("/").toURI()).getParent().toString());
+		config.put("input","com.rock.gf");
 		context.setConfig(config);
 		context.addPlugin(springMVCplugin);
 		
